@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahin.enyakinkangrubu.Kanilanver"
+    android:background="#CF2D2D">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/ustlogo"/>
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/bmenuarama"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuarama"
+            />
+        <Button
+            android:id="@+id/bmenubagis"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menubagis"
+            />
+        <Button
+            android:id="@+id/bmenuchat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuchat"
+            />
+        <Button
+            android:id="@+id/bmenuayarlar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuayarlar"
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlayout"
+    android:layout_marginLeft="10dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="107dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="14dp"
+        android:background="@drawable/hastaneadi"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/eHastaneAdi"
+        android:layout_width="225dp"
+        android:layout_height="27dp"
+        android:paddingLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:background="@drawable/edittextarkasi"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="94dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ilankangrubu"
+        android:layout_below="@+id/eHastaneAdi"
+        android:layout_alignStart="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/spinnerkangrubu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="79dp"
+        android:layout_height="27dp"
+        android:background="@drawable/aciklama"
+        android:layout_alignTop="@+id/eAciklama"
+        android:layout_alignStart="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/eAciklama"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingLeft="5dp"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="false"
+        android:background="@drawable/edittextarkasi"
+        android:singleLine="false"
+        android:layout_marginTop="48dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/spinnerkangrubu"
+        android:layout_alignStart="@+id/eHastaneAdi" />
+
+    <Button
+        android:id="@+id/bkonumuguncelle"
+        android:layout_width="213dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bkonumuguncelle"
+        android:layout_below="@+id/eAciklama"
+        android:layout_alignStart="@+id/tsuankikonum" />
+
+    <Button
+        android:id="@+id/bilaniver"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:layout_alignBottom="@+id/bkonumuguncelle"
+        android:layout_alignEnd="@+id/eAciklama"
+        android:background="@drawable/bilaniver"/>
+
+
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/iadres"
+        android:layout_width="198dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/rlayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/songuncellenenadres"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/tsuankikonum"
+        android:layout_width="285dp"
+        android:layout_height="69dp"
+        android:background="@drawable/group5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/iadres"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

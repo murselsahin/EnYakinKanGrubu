@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahin.enyakinkangrubu.Ayarlar"
+    android:background="#CF2D2D">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/ustlogo"
+        />
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/bmenuarama"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuarama"
+            />
+        <Button
+            android:id="@+id/bmenubagis"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menubagis"
+            />
+        <Button
+            android:id="@+id/bmenuchat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuchat"
+            />
+        <Button
+            android:id="@+id/bmenuayarlar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuayarlar"
+            />
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/menu"
+    android:id="@+id/scrollView2">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:text="Adınız"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:textSize="18dp"
+        android:id="@+id/textView12"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="213dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/textView18"
+        android:background="@drawable/ayarlaredittextarkasi"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView12"
+        android:layout_marginStart="32dp"
+        android:text="Soyadınız"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="14dp"
+        android:textSize="18dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="213dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignStart="@+id/editText"
+        android:background="@drawable/ayarlaredittextarkasi"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="14dp"
+        android:text="E-Mailiniz"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="213dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/editText3"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/ayarlaredittextarkasi"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/editText4"
+        android:text="Doğum Tarihiniz"
+
+        android:layout_marginTop="24dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_marginStart="33dp"
+        android:layout_toEndOf="@+id/textView20"
+        android:background="@drawable/ayarlardate" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/button6"
+        android:text="17 Ağustos 2017"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:text="Tel Numaranız"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toEndOf="@+id/textView20"
+        android:ems="10"
+        android:inputType="phone"
+        android:background="@drawable/ayarlaredittextarkasi"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView22"
+        android:layout_below="@+id/textView22"
+        android:text="Kan Grubunuz"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+
+        android:layout_marginTop="24dp"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignStart="@+id/editText5" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView23"
+        android:layout_below="@+id/spinner2"
+        android:text="Yakınlarda Kan İlanı Olursa Haber Ver"
+        android:textColor="#FFFFFF"
+       
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/butonkonumuguncelle"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ayarlarkkonumuguncelle"
+       />
+
+    <Button
+        android:id="@+id/butonbilgilerimiguncelle"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/butonkonumuguncelle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ayarlarbilgilerimiguncelle"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

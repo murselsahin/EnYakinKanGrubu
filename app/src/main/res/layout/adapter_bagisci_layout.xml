@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D54746">
+
+    <ImageView
+        android:id="@+id/imgpic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+       />
+
+    <LinearLayout
+        android:id="@+id/lineer"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/imgpic"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/imgpic"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/bagisciisim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mürsel ŞAHİN"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:id="@+id/bagiscikangrubu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A RH +"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/bagisciuzaklik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uzaklık :"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineer2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/lineer"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/lineer"
+        >
+        <Button
+            android:id="@+id/bagiscichat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/adapterbagiscichat"/>
+        <Button
+            android:id="@+id/bagisciara"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/adapterbagisciara"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/bagiscisms"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/adapterbagiscisms"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/bagiscikonum"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/adapterbagiscikonum"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

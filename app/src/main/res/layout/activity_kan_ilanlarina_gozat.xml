@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahin.enyakinkangrubu.KanIlanlarinaGozat"
+    android:background="#CF2D2D">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/ustlogo"/>
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/bmenuarama"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuarama"
+            />
+        <Button
+            android:id="@+id/bmenubagis"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menubagis"
+            />
+        <Button
+            android:id="@+id/bmenuchat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuchat"
+            />
+        <Button
+            android:id="@+id/bmenuayarlar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuayarlar"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="94dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/menu"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/kanilanlari_kan_grubu" />
+
+    <Spinner
+        android:id="@+id/sskangrubu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="63dp"
+        android:layout_height="27dp"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/kanilanlari_uzaklik" />
+
+    <Spinner
+        android:id="@+id/suzaklik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignStart="@+id/sskangrubu" />
+
+    <Button
+        android:id="@+id/blistele"
+        android:layout_width="123dp"
+        android:layout_height="47dp"
+
+        android:layout_below="@+id/suzaklik"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:background="@drawable/blistele" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/blistele"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="3dp"
+    android:textColor="#FFFFFF"
+    android:text="Açıklamayı Görebilmek İçin Konuma Tıklayınız"/>
+
+        <ListView
+            android:id="@+id/list_kanilanlari"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/blistele"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginTop="34dp"></ListView>
+
+</RelativeLayout>

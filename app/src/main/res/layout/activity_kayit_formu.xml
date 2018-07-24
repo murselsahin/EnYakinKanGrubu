@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sahin.enyakinkangrubu.Kanilanver"
+    android:background="#CF2D2D">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/ustlogo"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:text="Adınız "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="213dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/ayarlaredittextarkasi"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="18dp"
+        android:text="Soyadınız "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/Surname"
+        android:layout_width="213dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignStart="@+id/Name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/ayarlaredittextarkasi"/>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="19dp"
+        android:text="Teleon Numaranız "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:id="@+id/Phone"
+        android:layout_width="180dp"
+        android:layout_height="27dp"
+        android:layout_alignBottom="@+id/textView27"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/textView27"
+        android:background="@drawable/ayarlaredittextarkasi"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_centerVertical="true"
+        android:text="Doğum Tarihiniz "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView27"
+        android:background="@drawable/ayarlardate"/>
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/btnDate"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_below="@+id/btnDate"
+        android:layout_marginTop="17dp"
+        android:text="Kan Grubunuz "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerKanGrubu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_toEndOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView30"
+        android:layout_below="@+id/textView30"
+        android:layout_marginTop="19dp"
+        android:text="Cinsiyetiniz "
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCinsiyet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView31"
+        android:layout_alignStart="@+id/spinnerKanGrubu" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="201dp"
+        android:layout_height="58dp"
+        android:background="@drawable/reckayitol"
+        android:layout_below="@+id/spinnerCinsiyet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+
+</RelativeLayout>

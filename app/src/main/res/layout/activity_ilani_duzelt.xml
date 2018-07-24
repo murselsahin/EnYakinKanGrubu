@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.sahin.enyakinkangrubu.Info.IlaniDuzelt"
+    android:background="#CF2D2D">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/ustlogo"/>
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/bmenuarama"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuarama"
+            />
+        <Button
+            android:id="@+id/bmenubagis"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menubagis"
+            />
+        <Button
+            android:id="@+id/bmenuchat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuchat"
+            />
+        <Button
+            android:id="@+id/bmenuayarlar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:background="@drawable/menuayarlar"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="91dp"
+                android:layout_height="22dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/duzelthastaneadi" />
+
+            <EditText
+                android:id="@+id/eHastaneAdi"
+                android:layout_width="213dp"
+                android:layout_height="22dp"
+                android:layout_alignBottom="@+id/textView5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="21dp"
+                android:background="@drawable/ehastaneadi"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="80dp"
+                android:layout_height="22dp"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/duzelkangrubu" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/eHastaneAdi"
+                android:layout_alignTop="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="67dp"
+                android:layout_height="22dp"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/duzeltaciklama" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="213dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/spinner"
+                android:layout_alignTop="@+id/textView9"
+                android:background="@drawable/ehastaneadi"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="53dp"
+                android:layout_height="22dp"
+                android:layout_alignStart="@+id/editText2"
+                android:layout_below="@+id/editText2"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/duzeltkonum" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="312dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/textView10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/ekonum"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="157dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/duzeltbkonumuguncelle" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="144dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/textView9"
+                android:layout_below="@+id/button2"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/duzeltbilanidegistir" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="126dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_toEndOf="@+id/textView10"
+                android:background="@drawable/duzeltbilanisil" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

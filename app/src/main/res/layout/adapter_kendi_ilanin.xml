@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D54746">
+
+    <LinearLayout
+        android:id="@+id/lineeeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        >
+
+        <TextView
+            android:id="@+id/kendiilankangrubu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="A RH +"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/kendiilanhastane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="Hastane Adi"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineeeeer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lineeeer"
+        android:layout_marginStart="26dp"
+        android:layout_toEndOf="@+id/lineeeer"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/kendiilantarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="16.06.2017"
+            android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/kendiilanaciklama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lineeeer"
+        android:layout_below="@+id/lineeeer"
+        android:text="Açıklama"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/kendiilanadres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/kendiilanaciklama"
+        android:layout_below="@+id/kendiilanaciklama"
+        android:textColor="#FFFFFF"
+        android:text="Adres"/>
+
+</RelativeLayout>
